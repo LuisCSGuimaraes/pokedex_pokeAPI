@@ -2,7 +2,7 @@
 const pokemonList = document.getElementById("pokemonList")
 const loadMoreButton = document.getElementById("loadMoreButton")
 const maxRecord = 151
-const limit = 10git 
+const limit = 10
 let offset = 0
 
 /*Mapear o resultado json da requisição da PokeAPI, enviar para a função 
