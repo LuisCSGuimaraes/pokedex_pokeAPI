@@ -1,0 +1,237 @@
+.info {
+    height: 100vh;
+    width: 100vw;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c85e;
+}
+
+.fire {
+    background-color: #ee7f3e;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #f8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f3816;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+.pkm-info {
+    padding: 1rem 2.5rem;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 2rem 2rem 0 0;
+    list-style: none;
+    height: 47vh;
+}
+
+.arrow {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: .25rem;
+    margin-bottom: 1rem;
+    margin-top: .25rem;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.back-and-heart {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.heart {
+    background-color: #fff;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+    margin-top: 1.1rem;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart::before {
+    left: -8px;
+}
+
+.heart::after {
+    top: -8px;
+}
+
+
+.pkm-info .number-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pkm-info .infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.pkm-info .infos .types {
+    margin: 0;
+    padding: 0;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.pkm-info .infos .types .type {
+    width: fit-content;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem .15rem;
+    font-size: .900rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+
+.pkm-info .number {
+    text-align: right;
+    padding-top: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: .800rem;
+}
+
+.pkm-info .name {
+    text-align: left;
+    width: fit-content;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+
+}
+
+.pkm-info-inferior {
+    margin-top:-2rem;
+    background-color:white;
+    color: black;
+    border-radius: 2rem;
+    list-style: none;
+    height: 53vh;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .pkm-info-inferior img {
+    max-width: 100%;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -12rem;
+    z-index: 1;
+}
+
+
+
+@media screen and (min-width: 380px) {
+    .info {
+        max-width: 380px;
+        height: auto;
+        margin: auto;
+        border-radius: 1rem;
+    }
+    .pkm-info-inferior img{
+        height: 220px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .info {
+        max-width: 576px;
+        height: auto;
+        margin: auto;
+        border-radius: 1rem;
+    }
+    .pkm-info-inferior img{
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .info {
+        max-width: 650px;
+        height: auto;
+        margin: auto;
+        border-radius: 1rem;
+    }
+    .pkm-info-inferior img{
+        height: 250px;
+    }
+}

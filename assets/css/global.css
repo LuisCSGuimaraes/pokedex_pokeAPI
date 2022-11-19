@@ -4,7 +4,11 @@
 }
 
 body{
-    background-color: #f6f8fc;
+    background-color: #c9d2e4;
+}
+
+a{
+    text-decoration: none;
 }
 
 .content{

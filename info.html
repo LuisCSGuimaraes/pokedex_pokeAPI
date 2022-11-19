@@ -20,32 +20,43 @@
     <!--CSS principal-->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
-    <link rel="stylesheet" href="/assets/css/pokeball.css">
+    <link rel="stylesheet" href="/assets/css/info.css">
 </head>
 
 <body>
+    <section class="info">
+        <li class="pkm-info grass">
 
-    <section class="content">
-        <div class="poke_box">
-            <h1>Pokédex</h1>
-            <div class="pokeball">
-                <div class="pokeball__button"></div>
-            </div>   
-        </div>
-        <ol id="pokemonList" class="pokemons">
-            <!----Pokémon here---->
-        </ol>
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
+            <div class="back-and-heart">
+                <p><a id="return-link" href="index.html"><i class="arrow left"></i></a></p>
+                <div class="heart"></div>
+            </div>
+
+            <div class="number-name">
+                <span class="name">Bulbassaur</span>
+                <span class="number">#001</span>
+
+            </div>
+
+            <div class="infos">
+                <ol class="types">
+                    <span class="type grass">grass</span>
+                    <span class="type poison">poison</span>
+                </ol>
+            </div>
+        </li>
+        <li class="pkm-info-inferior">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+            alt="Bulbassaur">
+                    
+        </li>
     </section>
 
     <!--JavaScript-->
     <script src="/assets/javascript/pokemon-model.js"></script>
     <script src="/assets/javascript/poke-api.js"></script>
-    <script src="/assets/javascript/main.js"></script>
+    <script src="/assets/javascript/info.js"></script>
+
 </body>
 
 </html>
