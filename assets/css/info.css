@@ -3,78 +3,6 @@
     width: 100vw;
 }
 
-.normal {
-    background-color: #a6a877;
-}
-
-.grass {
-    background-color: #77c85e;
-}
-
-.fire {
-    background-color: #ee7f3e;
-}
-
-.water {
-    background-color: #678fee;
-}
-
-.electric {
-    background-color: #f7cf2e;
-}
-
-.ice {
-    background-color: #98d5d7;
-}
-
-.ground {
-    background-color: #dfbf69;
-}
-
-.flying {
-    background-color: #a98ff0;
-}
-
-.poison {
-    background-color: #a040a0;
-}
-
-.fighting {
-    background-color: #bf3029;
-}
-
-.psychic {
-    background-color: #f65687;
-}
-
-.dark {
-    background-color: #725847;
-}
-
-.rock {
-    background-color: #b8a137;
-}
-
-.bug {
-    background-color: #f8b720;
-}
-
-.ghost {
-    background-color: #6e5896;
-}
-
-.steel {
-    background-color: #b9b7cf;
-}
-
-.dragon {
-    background-color: #6f3816;
-}
-
-.fairy {
-    background-color: #f9aec7;
-}
-
 .pkm-info {
     padding: 1rem 2.5rem;
     margin-top: 1rem;
@@ -129,7 +57,6 @@
 .heart::after {
     top: -8px;
 }
-
 
 .pkm-info .number-name {
     display: grid;
@@ -190,7 +117,7 @@
  
  .pkm-info-inferior img {
     max-width: 100%;
-    height: 250px;
+    height: 220px;
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -198,20 +125,84 @@
     z-index: 1;
 }
 
+.pkm-info-inferior .pkm-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 0 1.1rem;
+}
 
+.pkm-info-inferior .pkm-detail .menu {
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize
+}
 
-@media screen and (min-width: 380px) {
+.pkm-info-inferior .pkm-detail .menu .type {
+    width: fit-content;
+    color: black;
+    opacity: .35;
+    padding: 0;
+    margin: 1.25rem 1rem;
+    font-size: .825rem;
+    text-align: center;
+}
+
+.pkm-info-inferior .pkm-detail .description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform: capitalize;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.pkm-info-inferior .pkm-detail .description-name {
+    display: flex;
+    flex-direction: column ;
+    padding: 0;
+    opacity: .35;
+    font-size: .825rem;
+    text-align: left;
+
+}
+
+.pkm-info-inferior .pkm-detail .description-value{
+    display: flex;
+    flex-direction: column  ;
+    padding: 0;
+    font-size: .825rem;
+    text-align: left;
+}
+
+.pkm-info-inferior .pkm-detail .type{
+    padding-bottom: .5rem ;
+}
+
+.pkm-info-inferior .pkm-detail .menu-2 {
+    padding: 0;
+    text-align: left;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: .825rem;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 420px) {
     .info {
-        max-width: 380px;
+        max-width: 420px;
         height: auto;
         margin: auto;
         border-radius: 1rem;
     }
     .pkm-info-inferior img{
-        height: 220px;
+        margin-top: -10rem;
+        height: 200px;
     }
 }
-
+/*
 @media screen and (min-width: 576px) {
     .info {
         max-width: 576px;
@@ -234,4 +225,4 @@
     .pkm-info-inferior img{
         height: 250px;
     }
-}
+}*/ 
