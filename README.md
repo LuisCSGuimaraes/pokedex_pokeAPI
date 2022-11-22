@@ -13,4 +13,4 @@ Para a criação foram utilizadas as seguintes ferramentas:
 
 O design foi baseado em um visual encontrado no site [Dribble](https://dribbble.com/shots/6540871-Pokedex-App), tendo como autor [Saepul Nahwan](https://dribbble.com/saepulnahwan23), para quem vão todos os créditos pelo design apresentado. 
 
-<img width=90% src="https://raw.githubusercontent.com/LuisCSGuimaraes/pokedex_pokeAPI/main/assets/img/Info.png">
+<img width=90% src="https://raw.githubusercontent.com/LuisCSGuimaraes/pokedex_pokeAPI/main/assets/img/poke-Info.png">
