@@ -1,4 +1,4 @@
-//Capurar a ol do html
+//Capturar a ol do html
 const pokemonList = document.getElementById("pokemonList")
 const loadMoreButton = document.getElementById("loadMoreButton")
 const maxRecord = 151
@@ -13,7 +13,7 @@ function loadPokemonItems(offset, limit){
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) =>
             `
-                <a href="info.html?pokeId=${pokemon.number}">
+                <a href="info.html?pokemon=${pokemon.number}">
                     <li class="pokemon ${pokemon.type}">
                         <span class="number">#${pokemon.number}</span>
                         <span class="name">${pokemon.name}</span>

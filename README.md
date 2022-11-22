@@ -1,1 +1,2 @@
-# pokedex_pokeAPI
+# Pokedex utilizando a PokeAPI
+
